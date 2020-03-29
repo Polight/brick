@@ -13,7 +13,7 @@ Lego is inspired from other great libraries such as [VueJS](https://vuejs.org) [
 
 It's just **much lighter** with simplicity, source that are easy to read, hack and maintain.
 
-[View the demo page](index.html)
+[View the demo page](demo.html)
 
 ## Hello World
 
