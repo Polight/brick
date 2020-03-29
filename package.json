@@ -1,11 +1,9 @@
 {
   "name": "@polight/brick",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Part of Lego, the Lightweight fast Web-Component",
   "main": "lib/index.js",
-  "dependencies": {
-    "petit-dom": "^0.3.4"
-  },
+  "dependencies": {},
   "scripts": {},
   "keywords": [
     "webcomponents",
@@ -29,5 +27,10 @@
   "bugs": {
     "url": "https://github.com/polight/lego/issues"
   },
-  "homepage": "https://github.com/polight/lego#readme"
+  "homepage": "https://github.com/polight/lego#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0"
+  }
 }
