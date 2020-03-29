@@ -1,6 +1,6 @@
 
 <p style="text-align:center">
- <img src="./assets/lego.png" title="Fast Webcomponents" alt="Lego is a fast web-components library">
+ <img src="./assets/lego.png" title="Fast Webcomponents" alt="Lego is a fast web-components library" style="max-width:50%">
 </p>
 
 
