@@ -1,17 +1,12 @@
 {
-  "name": "@polight/lego",
+  "name": "@polight/brick",
   "version": "1.0.0",
-  "description": "Lightweight future-proof web-components",
+  "description": "Part of Lego, the Lightweight fast Web-Component",
   "main": "lib/index.js",
   "dependencies": {
     "petit-dom": "^0.3.4"
   },
   "scripts": {},
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
-  },
   "keywords": [
     "webcomponents",
     "vue",
