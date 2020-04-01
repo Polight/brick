@@ -2,6 +2,8 @@
 
 > The minimalist reactive web-component
 
+Brick is a thin layer to constructs [native webcomponents](https://developer.mozilla.org/en-US/docs/Web/Web_Components) and make them [reactive](https://en.wikipedia.org/wiki/Reactive_programming).
+
 Brick is:
 - 👙 minimalist: 74 lines of readable code (non-optimised, uncompressed, no cheating)
 - 🌱 low dependency: its single third-party is the minimalist [Petit-Dom](https://github.com/yelouafi/petit-dom) which itself has no dependency
@@ -48,13 +50,16 @@ There isn't much to explain, but let's detail a little:
 - `get vdom()` is the property that should return a function reprenting your HTML. That function is itself called passing the `state` argument. It should returns a virtual-dom. If you know [virtual-dom](https://medium.com/@deathmood/how-to-write-your-own-virtual-dom-ee74acc13060), [React](https://reactjs.org/) or [elm](https://elm-lang.org/), this writing will be familiar
 - `customElements.define('hello-world', HelloWorld)` that's the native way in HTML to declare the web-component
 
-
+If you'd rather write HTML in HTML and CSS in CSS rather than JavaScript, checkout [Lego](https://github.com/polight/lego) that builds Bricks out of HTML web-components.
 
 ### Documentation
 
 The best documentation is [reading the code](./lib/Component.js).
 
-However a couple of extra nodes might be handy.
+Because it constructs native webcomponents, all the native [web-components documentation](https://developer.mozilla.org/en-US/docs/Web/Web_Components) applies.
+You can therefore use [slots](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot), disable or enable [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM), the [`is` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#attr-is) and other web-component or HTML capabilities.
+
+In addition, a couple of extra tools are brought by Brick:
 
 #### state
 
