@@ -15,7 +15,7 @@ View the [demo](https://polight.github.io/brick/demo/) and [their source](https:
 
 Here's a fully working example with no install.
 
-Copy-paste the following in an __index.html__ and run it in localhost:
+Copy-paste the following in an HMTL file and run it in a browser:
 
 ```html
 <hello-world name="earth">

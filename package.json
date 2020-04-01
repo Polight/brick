@@ -1,6 +1,6 @@
 {
   "name": "@polight/brick",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The minimalistic and fast Web-Component library",
   "main": "lib/index.js",
   "dependencies": {},
