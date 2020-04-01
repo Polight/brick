@@ -29,14 +29,23 @@
 <script type=module>
   import { h, Component } from './lib/index.js'
 
+  // This is the class you construct. Just extend `Component`
   class HelloWorld extends Component {
+    // Here you can initialize anything before building
     init() {
-      this.state = { name: 'Where?' }
+      // `this.state` is very special. It contains all reactive properties
+      // of the component.
+      this.state = { name: 'Gaia?' }
     }
+
+    // this property returns a function.
+    // the function itself returns a virtual-dom representation.
+    // just build it as so: `h(nodeName, attributes, children)`
     get vdom() {
       return ({state}) => h("p", {}, `Hello ${state.name}`)
     }
   }
+  // Declare your class as an element. make sure to use an hyphen in the name!
   customElements.define('hello-world', HelloWorld)
 
 
@@ -51,24 +60,16 @@
         state.showText ? 'text displayed! 🎪' : 'text hidden 🕵️‍♀️'
       )}
   }
+
   customElements.define('x-button', XButton)
 
 
-
-  // This is the class you construct. Just extend `Component`
   class XCounter extends Component {
 
-    // Here you can initialize anything before building
     init() {
-      // `this.state` is very special. It contains all reactive properties
-      // of the component.
       this.state = { counter: 0 }
     }
 
-    // this property returns a function.
-    // the function itself returns a virtualdom.
-    // just build it as so: `h(nodeName, attributes, children)`
-    // you should return a function and you may use the state
     get vdom() {
       return ({ state }) => ([
         h('button', { class: 'primary', onclick: () => state.counter-- }, '-'),
@@ -87,6 +88,5 @@
     }
   }
 
-  // Declare your class as an element. make sure to use an hyphen in the name!
   customElements.define('x-counter', XCounter)
 </script>
