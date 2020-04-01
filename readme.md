@@ -50,7 +50,7 @@ There isn't much to explain, but let's detail a little:
 - `get vdom()` is the property that should return a function reprenting your HTML. That function is itself called passing the `state` argument. It should returns a virtual-dom. If you know [virtual-dom](https://medium.com/@deathmood/how-to-write-your-own-virtual-dom-ee74acc13060), [React](https://reactjs.org/) or [elm](https://elm-lang.org/), this writing will be familiar
 - `customElements.define('hello-world', HelloWorld)` that's the native way in HTML to declare the web-component
 
-If you'd rather write HTML in HTML and CSS in CSS rather than JavaScript, checkout [Lego](https://github.com/polight/lego) that builds Bricks out of HTML web-components.
+If you'd rather write HTML in HTML and CSS in CSS rather than JavaScript and virtual-dom, checkout [Lego](https://github.com/polight/lego) that builds Bricks out of HTML web-components.
 
 ### Documentation
 
