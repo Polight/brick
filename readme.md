@@ -9,7 +9,7 @@ Brick is:
 - 🚀 fast: using virtual dom through a thin layer makes it close to bare-metal.
 - 💧 simple: that's [Vanilla](http://vanilla-js.com/), there isn't much to know, it's a raw class to extend; no magic ✨.
 
-View the [demo](https://polight.github.io/brick/demo.html) and [their source](https://github.com/Polight/lego/tree/master/demo) 🧪.
+View the [demo](https://polight.github.io/brick/demo/) and [their source](https://github.com/Polight/lego/tree/master/demo) 🧪.
 
 ### Getting started
 

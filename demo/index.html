@@ -27,7 +27,7 @@
 </footer>
 
 <script type=module>
-  import { h, Component } from './lib/index.js'
+  import { h, Component } from '//unpkg.com/@polight/brick/lib'
 
   // This is the class you construct. Just extend `Component`
   class HelloWorld extends Component {
@@ -80,7 +80,6 @@
       ])
     }
 
-    // same as the vdom property, but for css. Yes, you can have reactive CSS! 😱
     get vstyle () {
       return ({ state }) => h('style', {}, `
         @import url('index.css');
