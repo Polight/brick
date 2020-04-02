@@ -7,11 +7,14 @@ Brick is a thin layer to constructs [native webcomponents](https://developer.moz
 Brick is:
 - 👙 minimalist: 74 lines of readable code (non-optimised, uncompressed, no cheating)
 - 🌱 low dependency: its single third-party is the minimalist [Petit-Dom](https://github.com/yelouafi/petit-dom) which itself has no dependency
-- ♻️ reactive: updating the state recalculate the Virtual Dom when needed.
-- 🚀 fast: using virtual dom through a thin layer makes it close to bare-metal.
-- 💧 simple: that's [Vanilla](http://vanilla-js.com/), there isn't much to know, it's a raw class to extend; no magic ✨.
+- ♻️ reactive: updating the state recalculate the Virtual Dom when needed
+- 🚀 fast: using virtual dom through a thin layer makes it close to bare-metal
+- 💧 simple: that's [Vanilla](http://vanilla-js.com/), there isn't much to know, it's a raw class to extend; no magic ✨
 
 View the [demo](https://polight.github.io/brick/demo/) and [their source](https://github.com/Polight/lego/tree/master/demo) 🧪.
+
+If you're looking for a higher level Web-Components library, checkout [Lego](https://github.com/polight/lego) that builds Bricks out of HTML web-component files.
+
 
 ### Getting started
 
@@ -48,9 +51,7 @@ There isn't much to explain, but let's detail a little:
 - `init() { this.state = { name: 'world' } }` declares the `state` with it's default values. Also, anything that is declared in the state—and only what is declared here—will be reactive
 - `toggleName` is a custom method that will be called on click
 - `get vdom()` is the property that should return a function reprenting your HTML. That function is itself called passing the `state` argument. It should returns a virtual-dom. If you know [virtual-dom](https://medium.com/@deathmood/how-to-write-your-own-virtual-dom-ee74acc13060), [React](https://reactjs.org/) or [elm](https://elm-lang.org/), this writing will be familiar
-- `customElements.define('hello-world', HelloWorld)` that's the native way in HTML to declare the web-component
-
-If you'd rather write HTML in HTML and CSS in CSS rather than JavaScript and virtual-dom, checkout [Lego](https://github.com/polight/lego) that builds Bricks out of HTML web-components.
+- `customElements.define('hello-world', HelloWorld)` that's the native way in HTML to declare the web-component.
 
 ### Documentation
 
