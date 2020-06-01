@@ -1,10 +1,18 @@
 {
   "name": "@polight/brick",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "The minimalistic and fast Web-Component library",
-  "main": "lib/index.js",
-  "dependencies": {},
-  "scripts": {},
+  "main": "dist/index.js",
+  "devDependencies": {
+    "petit-dom": "^0.3.4",
+    "rollup": "^2.12.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "rollup-plugin-gzip": "^2.5.0",
+    "rollup-plugin-terser": "^6.1.0"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
   "keywords": [
     "webcomponents",
     "vue",

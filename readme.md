@@ -101,3 +101,26 @@ A convenient method to call when the component is attached to the dom.
 #### disconnected()
 
 A convenient method to call when the component is removed from the dom.
+
+
+## Development
+
+### Working on sources
+
+When participating to Brick you can simply tune the _lib/index.js_ and import it.
+_petit-dom_ is the only dependency. You may need to adapt its path.
+
+### Compilation
+
+Compiling is convenient but not _future-proof_.
+Compilation is done with [Rollup](http://rollupjs.org/) and will break in the future.
+Therefore it is not a high dependency and should never be.
+
+That said, plugins for bundling, minifying and gziping are set up.
+
+You may install them all with `npm i --env=dev`.
+
+#### Compiling task
+
+`npm run build` to bundle/minimify/gzip _dist/index.js_.
+That will be bandwidth-friendlier.
