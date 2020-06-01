@@ -1,26 +1,45 @@
 <meta charset=utf8>
 <title>Demo of WebComponents built with Brick</title>
+<meta name=description value="Brick is a webcomponent for building HTML web apps. It is a native and simple layer to create cusstom elements.">
 <link rel=stylesheet href=index.css>
 
-<h1>Brick webcomponents demo</h1>
+<h1>WebComponents made with Brick</h1>
 
-<article>
-  <h2>Display</h2>
-  <p>Minimalistic display</p>
-  <hello-world name="World!"></hello-world>
-</article>
+<section id="intro">
+  <p>
+    Viewing the source of this webpage will show you the whole source code of the components.
+    <a href="https://github.com/polight/brick">Brick</a> does not require any webpack or other compiling library.
+    You can just use it right away.
+  </p>
 
-<article>
-  <h2>Button</h2>
-  <p>Minimalistic button demo</p>
-  <x-button></x-button>
-</article>
+  <p>
+    A few demo example are available below: each box is an HTML with a description and the component usage below the line.
+  </p>
+</section>
 
-<article>
-  <h2>Counter</h2>
-  <p>This is a basic classical counter demo</p>
-  <x-counter></x-counter>
-</article>
+<section id=demo-list>
+  <article>
+    <h2>Minimalist Component Display</h2>
+    <p class=description>Below is a dummy component that just displays a text.
+    The text is self-contained in the component and a different text is passed as attribute.
+  The value can also be changed from the outside. Click on the second component to change the value.</p>
+    <hello-world name="World!"></hello-world>
+    <hello-world name="…" onclick="this.setAttribute('name', 'Gaia!')"></hello-world>
+  </article>
+
+  <article>
+    <h2>Button</h2>
+    <p class=description>A button can contain all its actions within the component itself and react.</p>
+    <x-button></x-button>
+  </article>
+
+  <article>
+    <h2>Counter</h2>
+    <p class=description>Counters demo are the new black.
+      You can't make a component without a demo with a counter in 2020.</p>
+    <x-counter></x-counter>
+  </article>
+</section>
 
 <footer>
   <a href="https://github.com/polight/lego">Source and documentation</a>
