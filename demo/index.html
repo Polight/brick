@@ -75,7 +75,7 @@
     get vdom() {
       return ({ state }) => h(
         'button',
-        { onclick: () => state.showText = !state.showText },
+        { onclick: () => this.render({ showText: !state.showText }) },
         state.showText ? 'text displayed! 🎪' : 'text hidden 🕵️‍♀️'
       )}
   }
@@ -91,10 +91,10 @@
 
     get vdom() {
       return ({ state }) => ([
-        h('button', { class: 'primary', onclick: () => state.counter-- }, '-'),
+        h('button', { class: 'primary' , onclick: () => this.render({ counter: state.counter - 1 }) }, '-'),
         h('span', {}, `${ state.counter * 10 }%`),
-        h('button', { onclick: () => state.counter++ }, '+'),
-        h('button', { onclick: () => state.counter = 0, class: 'reset' }, '♻'),
+        h('button', { onclick: () => this.render({ counter: state.counter + 1 }) }, '+'),
+        h('button', { onclick: () => this.render({ counter:  0 }), class: 'reset' }, '♻'),
         h('progress', { value: state.counter * 10, max: 100 })
       ])
     }

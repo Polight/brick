@@ -31,7 +31,7 @@ Copy-paste the following in an HMTL file and run it in a browser:
   class HelloWorld extends Component {
     init() { this.state = { name: 'world' } }
 
-    toggleName() { this.state.name = 'gaia' }
+    toggleName() { this.render({ name: 'gaia' }) }
 
     get vdom() {
       return ({ state }) => [
@@ -70,7 +70,8 @@ It can be reactive (when declared in the init) and can be updated by the app.
 State is fed the following way:
 1. declared in the `init()` with the default values
 2. attributes of the element in the HTML will overwrite the defaults
-3. changing values in the object or on the component attributes will update the values and re-render the component.
+3. changing values in the object or on the component attributes will update the state values (without re-rendering)
+4. call `this.render(state)` to update the state **and** update the interface.
 
 #### init()
 
